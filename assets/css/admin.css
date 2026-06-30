@@ -1,0 +1,163 @@
+/* Make Admin Dashboard match Customer Dashboard style */
+
+:root {
+    --primary: #A67B5B;
+    --primary-dark: #8B6145;
+    --secondary: #F2E8D5;
+    --light: #F9F5F0;
+    --dark: #3A3229;
+}
+
+/* Overall background */
+body,
+.admin-main {
+    background: #F9F5F0 !important;
+    color: #3A3229;
+}
+
+/* Sidebar like customer portal */
+.admin-sidebar {
+    background: linear-gradient(180deg, #2f281f 0%, #4A3A2C 100%) !important;
+    width: 280px;
+}
+
+.admin-main {
+    margin-left: 280px;
+    padding: 0 1.5rem 1.5rem;
+}
+
+/* Brand area */
+.admin-brand {
+    padding: 28px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.admin-brand h2 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.admin-brand h2 span,
+.admin-brand h2 .text-primary {
+    color: #A67B5B !important;
+}
+
+/* Sidebar menu */
+.admin-menu a {
+    margin: 8px 16px;
+    padding: 14px 18px;
+    border-radius: 14px;
+    border-left: none !important;
+    color: rgba(255,255,255,0.9);
+    font-weight: 600;
+}
+
+.admin-menu a:hover,
+.admin-menu a.active {
+    background: #A67B5B !important;
+    color: #fff !important;
+    box-shadow: 0 8px 20px rgba(166,123,91,0.25);
+}
+
+/* Top header */
+.admin-header,
+.top-navbar,
+.admin-topbar {
+    background: #fff !important;
+    border: none !important;
+    border-bottom: 1px solid #E8DCCF !important;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.05) !important;
+}
+
+/* Dashboard title section */
+.content-section h3 {
+    font-size: 28px;
+    font-weight: 800;
+    color: #3A3229;
+}
+
+/* Cards */
+.card-dashboard,
+.admin-card {
+    border: none !important;
+    border-radius: 18px !important;
+    background: #fff !important;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06) !important;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card-dashboard:hover,
+.admin-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.12) !important;
+}
+
+.card-dashboard::before {
+    content: "";
+    display: block;
+    height: 5px;
+    background: linear-gradient(135deg, #A67B5B, #8B6145);
+}
+
+/* Card icons */
+.card-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 18px;
+    color: #A67B5B !important;
+    background: #F2E8D5 !important;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-admin {
+    background: linear-gradient(135deg, #A67B5B, #8B6145) !important;
+    border: none !important;
+    border-radius: 14px !important;
+    font-weight: 700;
+    box-shadow: 0 6px 15px rgba(166,123,91,0.25);
+}
+
+.btn-outline-primary {
+    color: #A67B5B !important;
+    border-color: #A67B5B !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary.active {
+    background: #A67B5B !important;
+    color: #fff !important;
+}
+
+/* Tables */
+.table {
+    color: #3A3229;
+}
+
+.table thead th {
+    background: #F2E8D5;
+    color: #3A3229;
+    border: none;
+}
+
+.table tbody tr:hover {
+    background: #F9F5F0;
+}
+
+/* Badges */
+.alert-badge {
+    background: #e74c3c !important;
+    box-shadow: 0 4px 12px rgba(231,76,60,0.3);
+}
+
+/* Mobile */
+@media (max-width: 991px) {
+    .admin-main {
+        margin-left: 0;
+    }
+
+    .admin-sidebar {
+        width: 260px;
+    }
+}
